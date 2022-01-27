@@ -3,7 +3,7 @@ kind: Config
 deploy:
   kubectl:
     manifests:
-      - ./infra/k8s/*
+      - ./infra/k8s*
 build:
   local:
     push: false
@@ -42,6 +42,14 @@ build:
             dest: .
     - image: tghtgh123123/expiration
       context: expiration
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: 'src/**/*.ts'
+            dest: .
+    - image: tghtgh123123/payments
+      context: payments
       docker:
         dockerfile: Dockerfile
       sync:

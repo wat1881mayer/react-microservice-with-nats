@@ -22,7 +22,7 @@
     "@types/express": "^4.17.13",
     "@types/jsonwebtoken": "^8.5.6",
     "@types/mongoose": "^5.11.97",
-    "@wattickets/common": "^1.0.13",
+    "@wattickets/common": "^1.0.15",
     "cookie-session": "^2.0.0",
     "express": "^4.17.2",
     "express-async-errors": "^3.1.1",
